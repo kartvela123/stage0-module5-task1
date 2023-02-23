@@ -62,7 +62,7 @@ public class ArrayTasks {
      */
     public int findIndexOfNumber(int[] arr, int number) {
         int indx = -1;
-        for (int num = 0; num <= arr.length; num++) {
+        for (int num = 0; num <= arr.length - 1; num++) {
             if (arr[num] == number) {
                 indx = num;
                 break;
@@ -82,7 +82,7 @@ public class ArrayTasks {
      */
     public String[] reverseArray(String[] arr) {
         String [] a = new String[arr.length];
-        for (int num = 0; num <= arr.length; num ++) {
+        for (int num = 0; num <= arr.length - 1; num ++) {
             a[arr.length - num] = arr[num] ;
         }
     return a;
@@ -101,7 +101,7 @@ public class ArrayTasks {
      */
     public int[] getOnlyPositiveNumbers(int[] arr) {
         int [] a = new int[arr.length];
-        for(int num = 0; num < arr.length; num ++) {
+        for(int num = 0; num < arr.length - 1; num ++) {
             if (arr[num] >= 0) {
                 a[num] = arr[num];
             }
@@ -121,5 +121,12 @@ public class ArrayTasks {
      * arr = [[3, 1, 2,], [3,2]] -> [[2, 3], [1, 2, 3]]
      * arr = [[5, 4], [7]]       -> [[7], [4, 5]]
      */
+    public int[][] sortRaggedArray(int[][] arr) {
+        int [][] res = new int[2][4];
+        return res;
 
-}
+    }
+        }
+
+
+
