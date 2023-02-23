@@ -83,7 +83,7 @@ public class ArrayTasks {
     public String[] reverseArray(String[] arr) {
         String [] a = new String[arr.length];
         for (int num = 0; num <= arr.length - 1; num ++) {
-            a[arr.length - num - 1] = arr[num] ;
+            a[arr.length - 1 - num] = arr[num] ;
         }
     return a;
     }
