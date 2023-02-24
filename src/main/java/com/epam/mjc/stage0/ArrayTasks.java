@@ -28,8 +28,8 @@ public class ArrayTasks {
      */
     public int[] generateNumbers(int length) {
         int [] arr = new int[length];
-        for (int num = 1; num <= length; num ++) {
-            arr[num] = num;
+        for (int num = 0; num < length; num ++) {
+            arr[num] = num + 1;
         }
         return arr;
 
@@ -101,7 +101,7 @@ public class ArrayTasks {
      */
     public int[] getOnlyPositiveNumbers(int[] arr) {
         int [] a = new int[arr.length];
-        for(int num = 0; num < arr.length - 1; num ++) {
+        for(int num = 0; num < arr.length; num ++) {
             if (arr[num] >= 0) {
                 a[num] = arr[num];
             }
